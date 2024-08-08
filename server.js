@@ -15,7 +15,7 @@ const io = socketIO(server);
 connectDB();
 app.use(
   cors({
-    origin: "http://localhost:3000/api/users",
+    origin: "https://live-room-4wmd.onrender.com/api/users",
   })
 );
 
