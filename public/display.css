@@ -9,6 +9,7 @@ html {
     background-image: url("sign up-07.jpg");
     background-blend-mode: color-dodge;
     background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
     background-size: cover;
     overflow-y: scroll;
     height: 100%;
