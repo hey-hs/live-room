@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+#userForm {
+    background-size: cover;
+    overflow-y: auto;
+    color: #333;
+    max-height: 90%;
+    max-width: 90%;
+    width: 80%;
+    background-image: url("sign up-07.jpg");
+    background-blend-mode: color-dodge;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#hidden-fields,
+#name-div,
+#contact-div,
+#address-div,
+#credentials-div {
+    display: flex;
+    width: 90%;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#name-div,
+#address-div {
+    justify-content: space-between;
+}
+
+#name-div input,
+#address-div input,
+#contact-div input,
+#credentials-div input,
+#userForm button {
+    width: 100%;
+    color: #333;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#name-div input,
+#address-div input {
+    width: 48%;
+}
+
+#name-div {
+    margin-bottom: 20px; 
+}
+
+#save-btn {
+    border-radius: 5px;
+    width: 30%;
+    height: 50px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+#save-btn:hover {
+    background-color: #0056b3;
+}
+
+#userForm input::placeholder {
+    color: #999;
+    font-size: 15px;
+}
+
+#userForm button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+#userForm button:hover {
+    background-color: #0056b3;
+}
+
+#userForm input:-webkit-autofill,
+#userForm input:-webkit-autofill:hover,
+#userForm input:-webkit-autofill:focus,
+#userForm input:-webkit-autofill:active {
+    background-color: #f0f0f0 !important;
+    color: #333;
+    -webkit-box-shadow: 0 0 5px rgba(210, 214, 140, 0.9) inset !important;
+    box-shadow: 0 0 5px rgba(210, 214, 140, 0.9) inset !important;
+}
+
+#userForm h2 {
+    margin-bottom: 0px; 
+    margin-top: 40px;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #000000;
+    background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    text-align: center;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    #userForm {
+        width: 95%;
+        padding: 10px;
+        max-height: none;
+        height: auto;
+    }
+
+    #name-div input,
+    #address-div input {
+        width: 100%;
+    }
+
+    #save-btn {
+        width: 100%;
+    }
+
+    #userForm h2 {
+        font-size: 28px;
+    }
+}
