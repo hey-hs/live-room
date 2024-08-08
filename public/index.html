@@ -71,6 +71,10 @@
                         contentType: "application/json",
                         success: function (response) {
                             alert("User saved successfully");
+                            const user = {
+                emailId: response.emailId,
+                name: `${response.firstName} ${response.lastName}`,
+              };
                             localStorage.setItem("user", JSON.stringify(user));
                             window.location.href = "display.html";
                         },
